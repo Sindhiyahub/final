@@ -1,0 +1,58 @@
+.cartButton {
+  display: flex;
+  height: 100%;
+  width: 5.4rem;
+  align-items: center;
+  justify-content: center;
+  background-color:transparent;
+}
+
+.cartButton:hover {
+  outline: 0.1rem solid rgb(143, 54, 126);
+  cursor: pointer;
+}
+
+.cartButton:active {
+  background-color: #cf6766;
+}
+
+.cartButton__icon {
+  margin-right: 0.6rem;
+  color: rgb(151, 63, 159);
+}
+
+.cartButton__score {
+  color: rgb(164, 44, 138);
+  font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 64rem) {
+  .cartButton {
+    width: 4rem;
+    height: 100%;
+  }
+
+  .cartButton__icon{
+    display: none;
+  }
+  .cartButton__score {
+    font-size: 0.6rem;
+  }
+  .cartButton__icon{
+    margin-right: .3rem;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .cartButton {
+    width: 2rem;
+    height: 80%;
+  }
+  .cartButton__score {
+    font-size: 0.4rem;
+  }
+  .cartButton__icon{
+    margin-right: .2rem;
+  }
+}
